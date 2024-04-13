@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  sadtalker:
+    container_name: sadtalker
+    image: maximofn/sadtalker:1.0.1
+    build: .
+    runtime: nvidia
+    network_mode: "host"
+    # volumes:
+    #   - ./tts:/root/.local/share/tts
+    tty: true
+    stdin_open: true

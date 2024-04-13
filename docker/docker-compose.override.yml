@@ -1,0 +1,5 @@
+version: "3.8"
+
+services:
+  sadtalker:
+    entrypoint: ["bash", "-c", "python3 app.py"]
